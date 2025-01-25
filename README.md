@@ -51,3 +51,28 @@ Jak działa system:
 >Obliczenia zużycia materiałów: Klasy produktów (np. Belt, Slab) umożliwiają obliczenie ilości potrzebnych materiałów dla >każdego zamówienia.
 
 Przedstawiony kod stanowi solidną podstawę do tworzenia symulacji produkcji. Można go łatwo rozbudować i dostosować do konkretnych potrzeb. Generowane dane mogą być przydatne zarówno dla programistów tworzących aplikacje produkcyjne, jak i dla analityków biznesowych chcących przeprowadzać symulacje i analizy.
+
+
+## Generators.py
+Kod stanowi fundament dla systemu zarządzania produkcją taśm. Jego głównym celem jest generowanie danych wejściowych dla procesu planowania produkcji. Składa się z kilku modułów, które współpracują ze sobą, aby stworzyć realistyczne scenariusze produkcyjne.
+
+Kluczowe klasy i ich funkcje
+>ProductGenerator generuje losowe produkty. Stosuje klasy i obiekty do reprezentowania produktów, wykorzystuje konstruktory do inicjalizacji obiektów.
+
+>OrderGenerator tworzy losowe zamówienia na podstawie wygenerowanych produktów.Korzysta z klas i obiektów do reprezentowania zamówień, wykorzystuje konstruktory do inicjalizacji obiektów.
+
+Hermetyzacja
+>Atrybuty obiektów są zazwyczaj prywatne (np. _product_id), co chroni je przed przypadkową modyfikacją.
+>
+>Dostęp do atrybutów odbywa się za pomocą metod dostępowych (getterów), co pozwala na kontrolę nad zmianami danych.
+
+Dziedziczenie
+>Klasa Belt dziedziczy po klasie Product, co pozwala na tworzenie bardziej szczegółowych definicji produktów.
+>
+>Dzięki dziedziczeniu, obiekty typu Belt mogą mieć dodatkowe atrybuty i metody specyficzne dla taśm.
+
+Konstruktory
+>Konstruktory są używane do inicjalizacji obiektów, ustawiając wartości początkowe dla ich atrybutów.
+
+Funkcje anonimowe (lambda):
+>Służą do tworzenia prostych funkcji, które są używane w określonych miejscach kodu, np. do generowania losowych wartości logicznych.
