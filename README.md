@@ -14,7 +14,10 @@ Funkcje:
 >generate_products_csv: Tworzy plik CSV z losowymi danymi o produktach.
 >generate_orders_csv: Tworzy plik CSV z losowymi zamówieniami, wykorzystując wcześniej wygenerowane dane o produktach.
 
+Modelowanie obiektów:
+
 >product.py: Definiuje abstrakcyjną klasę Product oraz jej konkretne podklasy: Belt i Slab. Klasy te przechowują informacje >o produktach i umożliwiają obliczenie zużycia materiałów.
+>
 >slab.py: Rozszerza klasę Product o dodatkowe właściwości związane z płytami (slabs).
 
 Planowanie produkcji:
@@ -38,7 +41,9 @@ Główne Moduły i Ich Funkcje
 
 Jak działa system:
 >Generowanie danych: Na początku tworzone są losowe produkty i zamówienia.
+>
 >Planowanie: Klasa WeeklyPlanner analizuje zamówienia i tworzy szczegółowy harmonogram produkcji, uwzględniając ograniczenia >dotyczące maszyn i czasu.
+>
 >Obliczenia zużycia materiałów: Klasy produktów (np. Belt, Slab) umożliwiają obliczenie ilości potrzebnych materiałów dla >każdego zamówienia.
 
 Przedstawiony kod stanowi solidną podstawę do tworzenia symulacji produkcji. Można go łatwo rozbudować i dostosować do konkretnych potrzeb. Generowane dane mogą być przydatne zarówno dla programistów tworzących aplikacje produkcyjne, jak i dla analityków biznesowych chcących przeprowadzać symulacje i analizy.
