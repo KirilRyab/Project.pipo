@@ -25,10 +25,15 @@ Konfiguracja
 
 Główne Moduły i Ich Funkcje
 >ProductGenerator: Generuje losowe produkty z różnymi właściwościami.
+>
 >OrderGenerator: Tworzy losowe zamówienia na podstawie dostępnych produktów.
+>
 >Product: Klasa bazowa dla wszystkich produktów, definiuje podstawowe atrybuty.
+>
 >Belt, Slab: Konkretne implementacje klasy Product dla różnych rodzajów produktów.
+>
 >WeeklyPlanner: Planuje produkcję na cały tydzień, biorąc pod uwagę dostępność maszyn, zamówienia i ograniczenia czasowe.
+>
 >ScheduleConfig: Przechowuje parametry konfiguracji produkcji.
 
 Jak działa system:
