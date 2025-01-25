@@ -18,7 +18,7 @@ Funkcje:
 >slab.py: Rozszerza klasę Product o dodatkowe właściwości związane z płytami (slabs).
 
 Planowanie produkcji:
->production_plan.py: Zawiera klasę WeeklyPlanner, która tworzy harmonogram produkcji na podstawie zamówień i dostępnych >zasobów.
+>production_plan.py: Zawiera klasę WeeklyPlanner, która tworzy harmonogram produkcji na podstawie zamówień i dostępnych zasobów.
 
 Konfiguracja
 >config.py: Definiuje parametry konfiguracji produkcji, takie jak liczba zmian, liczba maszyn itp.
