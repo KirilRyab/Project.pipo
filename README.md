@@ -6,12 +6,16 @@ tworzenie symulacji "co by było gdyby" czy analiza wydajności różnych scenar
 
 Główne elementy kodu:
 >ProductGenerator: Generuje losowe produkty z określonymi atrybutami (ID, liczba form, liczba pasków na formę).
+>
 >Product (abstrakcyjna): Reprezentuje ogólny produkt i definiuje podstawowe atrybuty.
+>
 >SpecialProduct: Dziedziczy po Product i dodaje atrybut określający, czy produkt jest premium.
+>
 >Order: Reprezentuje zamówienie na produkt, zawierając informacje o produkcie, ilości i terminie realizacji.
 
 Funkcje:
 >generate_products_csv: Tworzy plik CSV z losowymi danymi o produktach.
+>
 >generate_orders_csv: Tworzy plik CSV z losowymi zamówieniami, wykorzystując wcześniej wygenerowane dane o produktach.
 
 Modelowanie obiektów:
